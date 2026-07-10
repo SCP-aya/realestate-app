@@ -1,0 +1,206 @@
+/* ログイン・会員登録画面 */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px;
+  border-radius: 12px;
+  background-color: var(--color-surface, #ffffff);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.auth-form h1 {
+  margin: 0 0 16px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.auth-form label {
+  font-size: 0.875rem;
+  margin-top: 8px;
+}
+
+.auth-form input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.auth-form button {
+  margin-top: 16px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.auth-form button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.auth-switch {
+  margin-top: 16px;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 0.875rem;
+}
+
+.info-message {
+  color: #16a34a;
+  font-size: 0.875rem;
+}
+
+.loading-text {
+  text-align: center;
+  margin-top: 48px;
+}
+
+/* 物件一覧画面 */
+.properties-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.properties-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.properties-header h1 {
+  margin: 0 0 4px;
+  font-size: 1.5rem;
+}
+
+.user-email {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.properties-header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.properties-header button,
+.property-card-actions button,
+.property-form-actions button {
+  padding: 8px 16px;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.properties-header button.secondary,
+.property-form-actions button.secondary {
+  background-color: #ffffff;
+  color: #374151;
+  border-color: #d1d5db;
+}
+
+.property-card-actions button.danger {
+  background-color: #ffffff;
+  color: #dc2626;
+  border-color: #dc2626;
+}
+
+.empty-text {
+  color: #6b7280;
+  margin-top: 24px;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.property-card {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: var(--color-surface, #ffffff);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.property-card h2 {
+  margin: 0 0 8px;
+  font-size: 1.125rem;
+}
+
+.property-rent {
+  margin: 0 0 4px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.property-area {
+  margin: 0 0 12px;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.property-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* 物件の新規登録・編集フォーム */
+.property-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 400px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  background-color: var(--color-surface, #ffffff);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.property-form h2 {
+  margin: 0 0 8px;
+  font-size: 1.125rem;
+}
+
+.property-form label {
+  font-size: 0.875rem;
+  margin-top: 8px;
+}
+
+.property-form input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.property-form-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
